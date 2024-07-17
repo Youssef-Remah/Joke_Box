@@ -40,6 +40,7 @@ dependencies:
   flutter_bloc: ^8.1.6
   conditional_builder_null_safety: ^0.0.6
   flutter_styled_toast: ^2.2.1
+  auto_size_text: ^3.0.0
 
 dev_dependencies:
   flutter_test:
@@ -64,7 +65,8 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
+  assets:
+    - lib/assets/images/
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
@@ -79,10 +81,10 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
+  fonts:
+    - family: Copyduck
+      fonts:
+       - asset: lib/assets/fonts/Copyduck.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
