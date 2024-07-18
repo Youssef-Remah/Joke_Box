@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
-import 'package:joke_box/views/home_screen_view.dart';
+import 'package:joke_box/views/main_screen_view.dart';
 
 class SplashScreen extends StatefulWidget
 {
@@ -20,11 +20,11 @@ class _SplashScreenState extends State<SplashScreen>
     super.initState();
 
     Timer(
-      const Duration(seconds: 10,),
+      const Duration(seconds: 1,),
       ()
       {
         Navigator.of(context).pushReplacement(
-          MaterialPageRoute(builder: (context) => HomeScreen()),
+          MaterialPageRoute(builder: (context) => MainScreen()),
         );
       },
     );
