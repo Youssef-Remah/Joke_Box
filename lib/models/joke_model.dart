@@ -1,6 +1,6 @@
 class JokeModel
 {
-  String? error;
+  bool? error;
 
   String? category;
 

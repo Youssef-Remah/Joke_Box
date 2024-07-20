@@ -95,6 +95,10 @@ flutter:
     - family: SquashyFlow
       fonts:
         - asset: lib/assets/fonts/Squashy_Flow.ttf
+
+    - family: SeasonPrime
+      fonts:
+        - asset: lib/assets/fonts/Season_Prime.otf
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
   #
