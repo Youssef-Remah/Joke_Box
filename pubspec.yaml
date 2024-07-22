@@ -99,6 +99,14 @@ flutter:
     - family: SeasonPrime
       fonts:
         - asset: lib/assets/fonts/Season_Prime.otf
+
+    - family: RegularDay
+      fonts:
+        - asset: lib/assets/fonts/Regular_Day.ttf
+
+    - family: Jackpot
+      fonts:
+        - asset: lib/assets/fonts/Jackpot.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
   #
