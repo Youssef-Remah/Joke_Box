@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:joke_box/view_models/preferences_view_model/cubit.dart';
 import 'package:joke_box/view_models/preferences_view_model/states.dart';
+import 'package:joke_box/views/display_joke_screen_view.dart';
 
 class HomeScreen extends StatelessWidget
 {
@@ -18,7 +19,12 @@ class HomeScreen extends StatelessWidget
       {
         if(state is GetJokeSuccessState)
         {
-          //TODO: Navigate to the Display Joke View
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (BuildContext context) => DisplayJokeScreen(
+                jokeModel: PreferencesCubit.get(context).jokeModel!)
+            ),
+          );
         }
       },
 
@@ -37,7 +43,6 @@ class HomeScreen extends StatelessWidget
                 return ElevatedButton(
                   onPressed: ()
                   {
-                    //TODO: Send a Request to the API Then Navigate to the Joke Display Screen View
                     cubit.generateJoke();
                   },
 
