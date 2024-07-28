@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:joke_box/views/home_screen_view.dart';
@@ -41,31 +42,31 @@ class _MainScreenState extends State<MainScreen>
       appBar: AppBar(
         centerTitle: true,
 
-        title: (_selectedIndex == 0)? const Text('Home') :
+        title: (_selectedIndex == 0)? Text('app_bar_home'.tr()) :
 
-        (_selectedIndex == 1)? const Text('Saved Jokes') :
+        (_selectedIndex == 1)? Text('app_bar_favorites'.tr()) :
 
-        const Text('Preferences'),
+        Text('app_bar_preferences'.tr()),
       ),
 
       body: _navBarScreens[_selectedIndex],
 
       bottomNavigationBar: BottomNavigationBar(
         items:
-        const [
+        [
           BottomNavigationBarItem(
-            icon: Icon(Ionicons.home_outline),
-            label: 'Home',
+            icon: const Icon(Ionicons.home_outline),
+            label: 'home_nav_bar_label'.tr(),
           ),
 
           BottomNavigationBarItem(
-            icon: Icon(Ionicons.bookmarks_outline),
-            label: 'Saved Jokes',
+            icon: const Icon(Ionicons.bookmarks_outline),
+            label: 'saved_jokes_nav_bar_label'.tr(),
           ),
 
           BottomNavigationBarItem(
-            icon: Icon(Ionicons.settings_outline),
-            label: 'Preferences',
+            icon: const Icon(Ionicons.settings_outline),
+            label: 'preferences_nav_bar_label'.tr(),
           ),
         ],
 

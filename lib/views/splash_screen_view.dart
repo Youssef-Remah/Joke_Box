@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:auto_size_text/auto_size_text.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:joke_box/views/main_screen_view.dart';
 
@@ -33,19 +34,19 @@ class _SplashScreenState extends State<SplashScreen>
   @override
   Widget build(BuildContext context)
   {
-    return const Scaffold(
+    return Scaffold(
       body: Column(
         children:
         [
-          Expanded(
+          const Expanded(
             flex: 2,
             child: Image(image: AssetImage('lib/assets/images/splash_screen_bot.gif'))
           ),
 
           Expanded(
             child: AutoSizeText(
-              'Joke Box',
-              style: TextStyle(
+              'splash_screen'.tr(),
+              style: const TextStyle(
                 fontFamily: 'Copyduck',
                 fontWeight: FontWeight.bold,
                 fontSize: 60.0,

@@ -1,0 +1,29 @@
+{
+  "splash_screen": "Joke Box",
+
+  "app_bar_home": "Domů",
+
+  "app_bar_preferences": "Předvolby",
+
+  "app_bar_favorites": "Oblíbené vtipy",
+
+  "joke_gen": "Generovat vtip!",
+
+  "home_nav_bar_label": "Domů",
+
+  "saved_jokes_nav_bar_label": "Uložené vtipy",
+
+  "preferences_nav_bar_label": "Předvolby",
+
+  "lang_dropdown_label": "Jazyk",
+
+  "category_dropdown_label": "Kategorie",
+
+  "category_programming": "Programování",
+
+  "category_dark": "Temný",
+
+  "category_spooky": "Strašidelný",
+
+  "category_christmas": "Vánoce"
+}

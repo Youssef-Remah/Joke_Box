@@ -1,0 +1,29 @@
+{
+  "splash_screen": "Witz Box",
+
+  "app_bar_home": "Startseite",
+
+  "app_bar_preferences": "Einstellungen",
+
+  "app_bar_favorites": "Lieblingswitze",
+
+  "joke_gen": "Einen Witz generieren!",
+
+  "home_nav_bar_label": "Startseite",
+
+  "saved_jokes_nav_bar_label": "Gespeicherte Witze",
+
+  "preferences_nav_bar_label": "Einstellungen",
+
+  "lang_dropdown_label": "Sprache",
+
+  "category_dropdown_label": "Kategorie",
+
+  "category_programming": "Programmierung",
+
+  "category_dark": "Dunkel",
+
+  "category_spooky": "Gruselig",
+
+  "category_christmas": "Weihnachten"
+}

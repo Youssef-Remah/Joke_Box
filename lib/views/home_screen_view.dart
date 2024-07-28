@@ -1,5 +1,6 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:conditional_builder_null_safety/conditional_builder_null_safety.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:joke_box/view_models/preferences_view_model/cubit.dart';
@@ -52,12 +53,12 @@ class HomeScreen extends StatelessWidget
                     ),
                   ),
 
-                  child: const Padding(
-                    padding: EdgeInsets.all(15.0),
+                  child: Padding(
+                    padding: const EdgeInsets.all(15.0),
 
                     child: AutoSizeText(
-                      'Generate A Joke !',
-                      style: TextStyle(
+                      'joke_gen'.tr(),
+                      style: const TextStyle(
                         fontFamily: 'Copyduck',
                         fontSize: 30.0,
                       ),

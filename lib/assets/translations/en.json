@@ -1,0 +1,29 @@
+{
+  "splash_screen": "Joke Box",
+
+  "app_bar_home": "Home",
+
+  "app_bar_preferences": "Preferences",
+
+  "app_bar_favorites": "Favorite Jokes",
+
+  "joke_gen": "Generate A Joke !",
+
+  "home_nav_bar_label": "Home",
+
+  "saved_jokes_nav_bar_label": "Saved Jokes",
+
+  "preferences_nav_bar_label": "Preferences",
+
+  "lang_dropdown_label": "Language",
+
+  "category_dropdown_label": "Category",
+
+  "category_programming": "Programming",
+
+  "category_dark": "Dark",
+
+  "category_spooky": "Spooky",
+
+  "category_christmas": "Christmas"
+}
