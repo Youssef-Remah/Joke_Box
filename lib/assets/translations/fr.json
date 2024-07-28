@@ -1,0 +1,29 @@
+{
+  "splash_screen": "Boîte à blagues",
+
+  "app_bar_home": "Accueil",
+
+  "app_bar_preferences": "Préférences",
+
+  "app_bar_favorites": "Blagues favorites",
+
+  "joke_gen": "Générer une blague !",
+
+  "home_nav_bar_label": "Accueil",
+
+  "saved_jokes_nav_bar_label": "Blagues sauvegardées",
+
+  "preferences_nav_bar_label": "Préférences",
+
+  "lang_dropdown_label": "Langue",
+
+  "category_dropdown_label": "Catégorie",
+
+  "category_programming": "Programmation",
+
+  "category_dark": "Noir",
+
+  "category_spooky": "Épouvante",
+
+  "category_christmas": "Noël"
+}

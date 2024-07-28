@@ -1,0 +1,29 @@
+{
+  "splash_screen": "Caixa de piadas",
+
+  "app_bar_home": "Início",
+
+  "app_bar_preferences": "Preferências",
+
+  "app_bar_favorites": "Piadas favoritas",
+
+  "joke_gen": "Gerar uma piada!",
+
+  "home_nav_bar_label": "Início",
+
+  "saved_jokes_nav_bar_label": "Piadas salvas",
+
+  "preferences_nav_bar_label": "Preferências",
+
+  "lang_dropdown_label": "Idioma",
+
+  "category_dropdown_label": "Categoria",
+
+  "category_programming": "Programação",
+
+  "category_dark": "Escuro",
+
+  "category_spooky": "Assustador",
+
+  "category_christmas": "Natal"
+}

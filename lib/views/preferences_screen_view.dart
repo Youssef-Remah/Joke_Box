@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:joke_box/utils/reusable_components.dart';
@@ -31,22 +32,35 @@ class PreferencesScreen extends StatelessWidget
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children:
                 [
-                  const Text(
-                    'Language',
-                    style: TextStyle(
+                  Text(
+                    'lang_dropdown_label'.tr(),
+                    style: const TextStyle(
                       fontFamily: 'SeasonPrime',
                       fontSize: 28.0,
                     ),
                   ),
 
                   buildDropDownList(
-                    items: ['en - English', 'cs - Czech', 'de - German', 'es - Spanish', 'fr - French', 'pt - Portuguese'],
+                    items:
+                    [
+                      'en - English',
+
+                      'cs - Czech',
+
+                      'de - German',
+
+                      'es - Spanish',
+
+                      'fr - French',
+
+                      'pt - Portuguese',
+                    ],
 
                     selectedItem: cubit.language,
 
                     changeDropDownValue: (String newValue)
                     {
-                      cubit.changeLanguageDropDown(newLanguage: newValue);
+                      cubit.changeLanguageDropDown(newLanguage: newValue, context: context);
                     },
                   ),
                 ],
@@ -60,16 +74,25 @@ class PreferencesScreen extends StatelessWidget
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children:
                 [
-                  const Text(
-                    'Category',
-                    style: TextStyle(
+                  Text(
+                    'category_dropdown_label'.tr(),
+                    style: const TextStyle(
                       fontFamily: 'SeasonPrime',
                       fontSize: 28.0,
                     ),
                   ),
 
                   buildDropDownList(
-                    items: ['Programming', 'Dark', 'Spooky', 'Christmas'],
+                    items:
+                    [
+                      'Programming',
+
+                      'Dark',
+
+                      'Spooky',
+
+                      'Christmas',
+                    ],
 
                     selectedItem: cubit.category,
 

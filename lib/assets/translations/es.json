@@ -1,0 +1,29 @@
+{
+  "splash_screen": "Caja de chistes",
+
+  "app_bar_home": "Inicio",
+
+  "app_bar_preferences": "Preferencias",
+
+  "app_bar_favorites": "Chistes favoritos",
+
+  "joke_gen": "¡Generar un chiste!",
+
+  "home_nav_bar_label": "Inicio",
+
+  "saved_jokes_nav_bar_label": "Chistes guardados",
+
+  "preferences_nav_bar_label": "Preferencias",
+
+  "lang_dropdown_label": "Idioma",
+
+  "category_dropdown_label": "Categoría",
+
+  "category_programming": "Programación",
+
+  "category_dark": "Oscuro",
+
+  "category_spooky": "Espeluznante",
+
+  "category_christmas": "Navidad"
+}

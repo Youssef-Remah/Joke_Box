@@ -4,14 +4,37 @@ import 'package:joke_box/services/dio_helper.dart';
 import 'package:joke_box/utils/bloc_observer.dart';
 import 'package:joke_box/view_models/preferences_view_model/cubit.dart';
 import 'package:joke_box/views/splash_screen_view.dart';
+import 'package:easy_localization/easy_localization.dart';
 
-void main()
+void main() async
 {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  await EasyLocalization.ensureInitialized();
+
   Bloc.observer = MyBlocObserver();
 
   DioHelper.jokeInitializeApi();
 
-  runApp(const MyApp());
+  runApp(
+    EasyLocalization(
+      supportedLocales: const
+      [
+        Locale('en'),
+        Locale('fr'),
+        Locale('de'),
+        Locale('cs'),
+        Locale('es'),
+        Locale('pt'),
+      ],
+
+      path: 'lib/assets/translations',
+
+      fallbackLocale: const Locale('en'),
+
+      child: MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget
@@ -29,6 +52,12 @@ class MyApp extends StatelessWidget
       ],
 
       child: MaterialApp(
+
+        localizationsDelegates: context.localizationDelegates,
+
+        supportedLocales: context.supportedLocales,
+
+        locale: context.locale,
 
         debugShowCheckedModeBanner: false,
 
