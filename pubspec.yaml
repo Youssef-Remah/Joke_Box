@@ -43,6 +43,8 @@ dependencies:
   auto_size_text: ^3.0.0
   ionicons: ^0.2.2
   easy_localization: ^3.0.7
+  sqflite: ^2.3.2
+  uuid: ^4.4.2
 
 dev_dependencies:
   flutter_test:
